@@ -1,2 +1,153 @@
+Subprograma Principal
+    Declarar Texto operacoes
+    Declarar Real a, b, c
+    Declarar Texto resultado
+
+    Escrever "Escolha uma das 20 operacoes: +, -, *, /, %, ^, >, <, >=, <=, ==, !=, media, max, min, dist, somaquad, mediaquad, soma, diferenca"
+    Ler operacoes
+    Escrever "Digite a:"
+    Ler a
+    Escrever "Digite b:"
+    Ler b
+    Se operacoes == "+"
+        Atribuir c <- a+b
+        Escrever "Resultado: " & c
+    Senão
+        Se operacoes == "-"
+            Atribuir c <- a-b
+            Escrever "Resultado: " & c
+        Senão
+            Se operacoes == "*"
+                Atribuir c <- a*b
+                Escrever "Resultado: " & c
+            Senão
+                Se operacoes == "/"
+                    Se b != 0
+                        Atribuir c <- a/b
+                        Escrever "Resultado: " & c
+                    Senão
+                        Escrever "Erro: divisao por zero."
+                    Fim
+                Senão
+                    Se operacoes == "%"
+                        Se b != 0
+                            Atribuir c <- a % b
+                            Escrever "Resultado: " & c
+                        Senão
+                            Escrever "Erro: modulo por zero."
+                        Fim
+                    Senão
+                        Se operacoes == "^"
+                            Atribuir c <- a^b
+                            Escrever "Resultado: " & c
+                        Senão
+                            Se operacoes == ">"
+                                Se a > b
+                                    Escrever "Resultado: a e maior"
+                                Senão
+                                    Escrever "Resultado: b e maior ou igual"
+                                Fim
+                            Senão
+                                Se operacoes == "<"
+                                    Se a < b
+                                        Escrever "Resultado: a e menor"
+                                    Senão
+                                        Escrever "Resultado: b e menor ou igual"
+                                    Fim
+                                Senão
+                                    Se operacoes == ">="
+                                        Se a >= b
+                                            Escrever "Resultado: a e maior ou igual a b"
+                                        Senão
+                                            Escrever "Resultado: a e menor que b"
+                                        Fim
+                                    Senão
+                                        Se operacoes == "<="
+                                            Se a <= b
+                                                Escrever "Resultado: a e menor ou igual a b"
+                                            Senão
+                                                Escrever "Resultado: a e maior que b"
+                                            Fim
+                                        Senão
+                                            Se operacoes == "=="
+                                                Se a == b
+                                                    Escrever "Resultado: a e igual a b"
+                                                Senão
+                                                    Escrever "Resultado: a e diferente de b"
+                                                Fim
+                                            Senão
+                                                Se operacoes == "!="
+                                                    Se a != b
+                                                        Escrever "Resultado: a e diferente de b"
+                                                    Senão
+                                                        Escrever "Resultado: a e igual a b"
+                                                    Fim
+                                                Senão
+                                                    Se operacoes == "media"
+                                                        Atribuir c <- (a+b)/2
+                                                        Escrever "Media: " & c
+                                                    Senão
+                                                        Se operacoes == "max"
+                                                            Se a > b
+                                                                Atribuir c <- a
+                                                            Senão
+                                                                Atribuir c <- b
+                                                            Fim
+                                                            Escrever "Maior valor: " & c
+                                                        Senão
+                                                            Se operacoes == "min"
+                                                                Se a < b
+                                                                    Atribuir c <- a
+                                                                Senão
+                                                                    Atribuir c <- b
+                                                                Fim
+                                                                Escrever "Menor valor: " & c
+                                                            Senão
+                                                                Se operacoes == "dist"
+                                                                    Se a >= b
+                                                                        Atribuir c <- a-b
+                                                                    Senão
+                                                                        Atribuir c <- b-a
+                                                                    Fim
+                                                                    Escrever "Distancia absoluta: " & c
+                                                                Senão
+                                                                    Se operacoes == "somaquad"
+                                                                        Atribuir c <- a*a+b*b
+                                                                        Escrever "Soma dos quadrados: " & c
+                                                                    Senão
+                                                                        Se operacoes == "mediaquad"
+                                                                            Atribuir c <- (a*a+b*b)/2
+                                                                            Escrever "Media dos quadrados: " & c
+                                                                        Senão
+                                                                            Se operacoes == "soma"
+                                                                                Atribuir c <- a+b
+                                                                                Escrever "Soma: " & c
+                                                                            Senão
+                                                                                Se operacoes == "diferenca"
+                                                                                    Atribuir c <- a-b
+                                                                                    Escrever "Diferenca: " & c
+                                                                                Senão
+                                                                                    Escrever "Operacao invalida."
+                                                                                Fim
+                                                                            Fim
+                                                                        Fim
+                                                                    Fim
+                                                                Fim
+                                                            Fim
+                                                        Fim
+                                                    Fim
+                                                Fim
+                                            Fim
+                                        Fim
+                                    Fim
+                                Fim
+                            Fim
+                        Fim
+                    Fim
+                Fim
+            Fim
+        Fim
+    Fim
+Fim
 
 
